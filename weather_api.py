@@ -34,7 +34,7 @@ def current_weather(lat: float, lon: float) -> dict[str, Any]:
     'ощущаемая температура','атмосферное давление','влажность',
     'скорость ветра', 'порывы ветра', 'направление ветра'
     """
-    token = '5fee1ba0-726a-4eca-a110-54df00b43415'  # Вставить ваш токен
+    token = '5fee1ba0-726a-4eca-a110-54df00b43415'
     url = f"https://api.weather.yandex.ru/v2/forecast?lat={lat}&lon={lon}"
     headers = {"X-Yandex-API-Key": f"{token}"}
     response = requests.get(url, headers=headers)
